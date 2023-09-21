@@ -24,73 +24,96 @@ img {
   max-width: 100%;
 }
 
+/*Header*/
+
 .container-header {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .container-header-text {
-  width: 40%;
+  align-items: center;
+  border-bottom: 5px solid rgb(248, 6, 203);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  border-bottom: 5px solid rgb(248, 6, 203);
+  width: 70%;
 }
 
 .text-header {
   font-family: "Press Start 2P", cursive;
   color: #00ff00;
-  font-size: 2rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
-/* iPhones and so on */
-@media (max-width: 767px) {
-  .container-header-text {
-    width: 70%;
-  }
-
+@media (min-width: 768px) {
   .text-header {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
 }
 
-.gif-header-left {
-  position: relative;
-  top: 90px;
-  left: 170px;
-  width: 10%;
-  height: 10%;
-  padding: 0.5rem;
-  z-index: -1;
+@media (min-width: 1024px) {
+  .text-header {
+    font-size: 2.5rem;
+  }
 }
 
-.gif-header-right {
+.header-square-left {
   position: relative;
-  top: 192px;
-  right: 305px;
+  top: 30px;
+  left: 50px;
+  background-color: #ff00ff;
+  width: 60px;
+  height: 60px;
+  z-index: -5;
+  animation: blink-squre 0.4s infinite;
+}
+
+@media (min-width: 768px) {
+  .header-square-left {
+    left: 170px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-square-left {
+    left: 320px;
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.header-square-right {
+  position: relative;
+  top: 120px;
+  right: 170px;
   transform: rotate(-25deg);
-  width: 10%;
-  height: 10%;
-  padding: 0.5rem;
-  z-index: -1;
+  background-color: #ff00ff;
+  width: 60px;
+  height: 60px;
+  z-index: -5;
+  animation: blink-squre 0.4s infinite;
 }
 
-@media (max-width: 767px) {
-  .gif-header-left {
-    top: 55px;
-    left: 100px;
-    width: 15%;
-    height: 15%;
+@media (min-width: 768px) {
+  .header-square-right {
+    top: 170px;
+    right: 320px;
+    width: 120px;
+    height: 120px;
   }
+}
 
-  .gif-header-right {
-    top: 80px;
-    right: 170px;
-    width: 15%;
-    height: 15%;
+@media (min-width: 1024px) {
+  .header-square-right {
+    top: 170px;
+    right: 520px;
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -109,6 +132,8 @@ img {
   text-indent: 2rem;
   color: #ff00ff;
   font-family: Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .capitalLetter {
@@ -169,7 +194,7 @@ ul {
 .link-games {
   position: absolute;
   top: 100px;
-  left: -200px;
+  left: -50px; /* -200*/
   animation-name: games;
   animation-duration: 8s;
   animation-timing-function: linear;
@@ -178,8 +203,8 @@ ul {
 
 .link-amiga {
   position: absolute;
-  top: -300px;
-  right: -110px;
+  top: -250px; /* -300 */
+  right: -50px; /*-110*/
   animation-name: amiga;
   animation-duration: 4s;
   animation-timing-function: linear;
@@ -195,8 +220,8 @@ ul {
 }
 .link-read {
   position: absolute;
-  top: 300px;
-  right: -100px;
+  top: 300px; /*300px */
+  right: -50px; /*-100px*/
   animation-name: writing;
   animation-duration: 4s;
   animation-delay: 1s;
@@ -221,7 +246,7 @@ ul {
 .circle-2 {
   position: absolute;
   top: -210px;
-  right: 150px;
+  right: 100px; /*150px*/
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -235,7 +260,7 @@ ul {
 
 .circle-3 {
   position: absolute;
-  top: 300px;
+  top: 350px; /* 300 */
   left: 50px;
   width: 80px;
   height: 80px;
@@ -248,19 +273,49 @@ ul {
   animation-iteration-count: infinite;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-}
+/*footer*/
+
 .container-footer {
-  margin-top: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 30px;
   margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
+
 .container-footer p {
+  width: 100%;
   border: solid 4px #00ff00;
   padding: 20px;
+  text-align: center;
+  font-size: 1rem;
   font-family: Helvetica, sans-serif;
   color: #00ff00;
+}
+
+@media (min-width: 1024px) {
+  .container-footer p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animation */
+
+@keyframes blink-squre {
+  0% {
+    background-color: #ff00ff;
+  }
+  49% {
+    background-color: #ff00ff;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  100% {
+    background-color: #00ff00;
+  }
 }
 
 @keyframes amiga {

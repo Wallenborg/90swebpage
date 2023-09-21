@@ -25,7 +25,7 @@ img {
   max-width: 100%;
 }
 
-/*LOGO*/
+/*Header*/
 
 .container-header {
   display: flex;
@@ -559,75 +559,3 @@ img {
     width: 40px;
   }
 }
-/*
-
-@media (min-width: 768px) {
-  @keyframes dripp-dropp {
-    0% {
-      top: 0px;
-      width: 7px;
-      height: 7px;
-    }
-    20% {
-      top: 80px;
-      width: 7px;
-      height: 7px;
-    }
-    40% {
-      top: 180px;
-      width: 7px;
-      height: 7px;
-    }
-    60% {
-      top: 260px;
-      width: 7px;
-      height: 7px;
-    }
-    70% {
-      top: 360px;
-      width: 7px;
-      height: 7px;
-    }
-
-    80% {
-      top: 495px;
-      height: 7px;
-      width: 10px;
-    }
-
-    90% {
-      top: 495px;
-      height: 7x;
-      width: 30px;
-    }
-
-    100% {
-      top: 495px;
-      height: 7px;
-      width: 40px;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  @keyframes dripp-dropp {
-    80% {
-      top: 473px;
-      height: 7px;
-      width: 10px;
-    }
-
-    90% {
-      top: 473px;
-      height: 7px;
-      width: 30px;
-    }
-
-    100% {
-      top: 473px;
-      height: 7px;
-      width: 40px;
-    }
-  }
-}
-*/
