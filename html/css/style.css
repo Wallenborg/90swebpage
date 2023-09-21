@@ -506,7 +506,7 @@ img {
 
 @keyframes dripp-dropp {
   0% {
-    top: 0px;
+    top: 0%;
     width: 7px;
     height: 7px;
   }
@@ -532,19 +532,19 @@ img {
   }
 
   80% {
-    top: 355px;
+    top: 350px;
     height: 7px;
     width: 10px;
   }
 
   90% {
-    top: 355px;
+    top: 350px;
     height: 7x;
     width: 30px;
   }
 
   100% {
-    top: 355px;
+    top: 350px;
     height: 7px;
     width: 40px;
   }
