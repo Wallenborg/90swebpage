@@ -67,8 +67,8 @@ img {
   left: 30px;
   transform: rotate(25deg);
   background-color: #ff00ff;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   z-index: -5;
   animation: blink-squre 0.4s infinite;
 }
@@ -95,8 +95,8 @@ img {
   right: 30px;
   transform: rotate(-25deg);
   background-color: #ff00ff;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   z-index: -5;
   animation: blink-squre 0.4s infinite;
 }
