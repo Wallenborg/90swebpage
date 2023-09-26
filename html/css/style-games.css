@@ -33,28 +33,33 @@ img {
 }
 
 .container-header-text {
-  align-items: center;
-  border-bottom: 5px solid rgb(248, 6, 203);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 70%;
+  border-bottom: 5px solid rgb(248, 6, 203);
 }
 
 .text-header {
+  text-align: center;
+  font-size: 1.1rem;
   font-family: "Press Start 2P", cursive;
   color: #00ff00;
-  font-size: 1.1rem;
-  text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 550px) {
+  .text-header {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 700px) {
   .text-header {
     font-size: 2rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .text-header {
     font-size: 2.5rem;
   }
@@ -62,56 +67,24 @@ img {
 
 .header-square-left {
   position: relative;
-  top: 10px;
-  left: 60px;
+  top: 2vw;
+  left: 15vw;
   background-color: #ff00ff;
-  width: 70px;
-  height: 70px;
+  width: 20vw;
+  height: 20vw;
   z-index: -5;
   animation: blink-squre 0.4s infinite;
-}
-
-@media (min-width: 768px) {
-  .header-square-left {
-    left: 120px;
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header-square-left {
-    left: 130px;
-    width: 160px;
-    height: 160px;
-  }
 }
 
 .header-square-right {
   position: relative;
-  top: 10px;
-  right: 60px;
+  top: 2vw;
+  right: 15vw;
   background-color: #ff00ff;
-  width: 70px;
-  height: 70px;
+  width: 20vw;
+  height: 20vw;
   z-index: -5;
   animation: blink-squre 0.4s infinite;
-}
-
-@media (min-width: 768px) {
-  .header-square-right {
-    right: 120px;
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header-square-right {
-    right: 130px;
-    width: 160px;
-    height: 160px;
-  }
 }
 
 /* animation text */
@@ -168,15 +141,12 @@ img {
 }
 
 /* Main */
+
 .grids {
   display: grid;
-  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-rows: auto auto auto;
   gap: 10px;
-}
-@media (min-width: 768px) {
-  .grids {
-    grid-template-rows: 0.5fr 3.5fr 0.5fr;
-  }
+  justify-items: center;
 }
 
 /*LINKS*/
@@ -227,58 +197,32 @@ img {
 .screen {
   position: absolute;
   justify-self: center;
-  width: 340px;
-  height: 250px;
+  width: 58vw;
+  height: 42vw;
   background-color: rgb(191, 186, 186);
   border: solid 2px black;
   border-radius: 2%;
 }
-@media (min-width: 768px) {
-  .screen {
-    width: 600px;
-    height: 420px;
-  }
-}
 
 .window {
   position: relative;
-  top: 20px;
-  left: 20px;
-  width: 300px;
-  height: 200px;
+  top: 3vw;
+  left: 3.5vw;
+  width: 50vw;
+  height: 34vw;
   background-color: black;
   border-radius: 10%;
   animation-name: tv-flicker;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
 }
-@media (min-width: 768px) {
-  .window {
-    width: 540px;
-    height: 370px;
-  }
-}
-
-.amiga-text {
-  display: inline;
-  position: relative;
-  top: 25px;
-  left: 140px;
-  color: blueviolet;
-  font-family: monospace;
-}
-
-@media (min-width: 768px) {
-  .amiga-text {
-    left: 270px;
-  }
-}
 
 /*LINKS*/
+
 .container-links-page {
-  margin-top: 40px;
-  margin-right: 45px;
-  margin-bottom: 30px;
+  margin-top: 45vw;
+  margin-right: 5vw;
+  margin-bottom: 3vw;
 }
 
 .links-page {
@@ -288,17 +232,31 @@ img {
   gap: 0.4rem;
   list-style-type: none;
 }
+@media (min-width: 560px) {
+  .links-page {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.7rem;
+  }
+}
 
 .links-page a {
   display: flex;
   justify-content: center;
   font-size: 0.8rem;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #00ff00;
   text-decoration: none;
   font-family: "Press Start 2P", cursive;
   border-bottom: 3px solid rgb(248, 6, 203);
   border-left: 3px solid rgb(248, 6, 203);
   border-right: 3px solid rgb(248, 6, 203);
+}
+
+@media (min-width: 768px) {
+  .links-page a {
+    font-size: 1.2rem;
+  }
 }
 
 .line {
