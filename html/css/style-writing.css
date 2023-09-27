@@ -24,6 +24,13 @@ img {
   max-width: 100%;
 }
 
+.wrapper {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0.5rem;
+}
+
 /*Header*/
 
 .container-header {
@@ -245,6 +252,7 @@ img {
   height: 60px;
   width: 60px;
   border-top: 2px solid rgba(245, 245, 245, 0.556);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.209);
   border-radius: 50px;
   position: absolute;
   top: 5%;
@@ -267,6 +275,7 @@ img {
   height: 40px;
   width: 40px;
   border-top: 2px solid rgba(245, 245, 245, 0.556);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.209);
   border-radius: 50px;
   position: absolute;
   top: 5%;
@@ -289,6 +298,7 @@ img {
   height: 23px;
   width: 23px;
   border-top: 2px solid rgba(245, 245, 245, 0.556);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.209);
   border-radius: 50px;
   position: absolute;
   top: 5%;
@@ -431,12 +441,12 @@ img {
     opacity: 1;
   }
 
-  99% {
+  99.5% {
     transform: scale(2) translate(0, -320px) rotate(340deg);
     opacity: 1;
   }
   100% {
-    transform: scale(2) translate(0, -320px) rotate(360deg);
+    transform: scale(2.2) translate(0, -320px) rotate(360deg);
     opacity: 0;
   }
 }
@@ -458,12 +468,12 @@ img {
     transform: scale(1.7) translate(-30px, -250px) rotate(200deg);
     opacity: 1;
   }
-  99% {
+  99.5% {
     transform: scale(2) translate(20px, -310px) rotate(280deg);
     opacity: 1;
   }
   100% {
-    transform: scale(2) translate(20px, -310px) rotate(280deg);
+    transform: scale(2.2) translate(20px, -310px) rotate(280deg);
     opacity: 0;
   }
 }
