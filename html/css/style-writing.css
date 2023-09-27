@@ -399,13 +399,13 @@ img {
 
 @keyframes pop-up-text {
   0% {
-    display: none;
+    visibility: hidden;
   }
   25% {
-    display: none;
+    visibility: hidden;
   }
   50% {
-    display: none;
+    visibility: hidden;
   }
   75% {
   }
