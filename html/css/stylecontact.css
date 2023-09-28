@@ -82,6 +82,8 @@ img {
   position: relative;
   width: 20vw;
   height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
   top: 2vw;
   left: 12vw;
   z-index: -5;
@@ -94,6 +96,8 @@ img {
   position: relative;
   width: 20vw;
   height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
   top: 2vw;
   right: 12vw;
   z-index: -5;
@@ -117,9 +121,12 @@ img {
 .container {
   display: flex;
   justify-content: center;
+  align-self: center;
   margin-top: 100px;
 }
-.container-gif {
+.head-gif {
+  justify-self: center; /* Centrera horisontellt */
+  align-self: center;
 }
 .continer-form {
   display: grid;
@@ -162,9 +169,9 @@ img {
   color: #00ff00;
   text-decoration: none;
   font-family: "Press Start 2P", cursive;
-  border-bottom: 3px solid rgb(248, 6, 203);
-  border-left: 3px solid rgb(248, 6, 203);
-  border-right: 3px solid rgb(248, 6, 203);
+  border-bottom: 3px solid var(--color-accent-1);
+  border-left: 3px solid var(--color-accent-1);
+  border-right: 3px solid var(--color-accent-1);
 }
 
 @media (min-width: 768px) {
@@ -214,16 +221,23 @@ img {
 }
 @media (min-width: 600px) {
   .footer-headtext {
+    font-size: 1.5rem;
     grid-row: 1;
     grid-column: 1 / span 2;
   }
 }
 
 .footer-text {
-  font-size: 0.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   justify-self: start;
-  color: var(--color-accent-1);
+  font-family: Helvetica, sans-serif;
+  color: black;
+}
+@media (min-width: 900px) {
+  .footer-text {
+    font-size: 1.5rem;
+  }
 }
 
 .footer-links {
@@ -245,16 +259,16 @@ img {
 
 @keyframes blink-squre {
   0% {
-    background-color: #ff00ff;
+    background-color: var(--color-accent-1);
   }
   49% {
-    background-color: #ff00ff;
+    background-color: var(--color-accent-1);
   }
   50% {
-    background-color: #00ff00;
+    background-color: var(--color-primary);
   }
   100% {
-    background-color: #00ff00;
+    background-color: var(--color-primary);
   }
 }
 
