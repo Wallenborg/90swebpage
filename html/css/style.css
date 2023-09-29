@@ -31,6 +31,13 @@ img {
   --color-accent-1: #ff00ff;
 }
 
+.wrapper {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0.5rem;
+}
+
 /*Header*/
 
 .container-header {
@@ -45,7 +52,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 70%;
-  border-bottom: 5px solid rgb(248, 6, 203);
+  border-bottom: 5px solid var(--color-accent-1);
 }
 
 .text-header {
@@ -76,10 +83,12 @@ img {
   position: relative;
   width: 20vw;
   height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
   top: 2vw;
   left: 12vw;
   z-index: -5;
-  background-color: #ff00ff;
+  background-color: var(--color-accent-1);
   transform: rotate(25deg);
   animation: blink-squre 0.4s infinite;
 }
@@ -88,10 +97,12 @@ img {
   position: relative;
   width: 20vw;
   height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
   top: 2vw;
   right: 12vw;
   z-index: -5;
-  background-color: #ff00ff;
+  background-color: var(--color-accent-1);
   transform: rotate(-25deg);
   animation: blink-squre 0.4s infinite;
 }
@@ -109,7 +120,7 @@ img {
   position: relative;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   animation: rain 3s infinite;
 }
 .pix-box-2 {
@@ -117,7 +128,7 @@ img {
   position: relative;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   animation: rain 5s infinite;
 }
 .pix-box-3 {
@@ -125,7 +136,7 @@ img {
   position: relative;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   animation: rain 2s infinite;
 }
 
@@ -134,14 +145,14 @@ img {
   position: relative;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   animation: rain 7s infinite;
 }
 .pix-box-5 {
   display: block;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   position: relative;
   animation: rain 4s 2s infinite;
 }
@@ -151,7 +162,7 @@ img {
   position: relative;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   animation: rain 4s 1s infinite;
 }
 .pix-box-7 {
@@ -159,7 +170,7 @@ img {
   position: relative;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   animation: rain 4s 5s infinite;
 }
 .pix-box-8 {
@@ -167,7 +178,7 @@ img {
   position: relative;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   animation: rain 6s 8s infinite;
 }
 .pix-box-9 {
@@ -175,7 +186,7 @@ img {
   position: relative;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   animation: rain 1s 12s infinite;
 }
 .pix-box-10 {
@@ -183,7 +194,7 @@ img {
   position: relative;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   animation: rain 8s 5s infinite;
 }
 .pix-box-11 {
@@ -191,8 +202,17 @@ img {
   position: relative;
   width: 5px;
   height: 5px;
-  background-color: rgb(248, 6, 203);
+  background-color: var(--color-accent-1);
   animation: rain 12s 6s infinite;
+}
+
+/* dripping line */
+
+.center-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .continer-line {
@@ -200,6 +220,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  justify-self: center;
 }
 
 @media (min-width: 768px) {
@@ -211,8 +232,9 @@ img {
 .line {
   position: absolute;
   height: 10px;
+  max-width: 1000px;
   width: 90%;
-  background-color: #00ff00;
+  background-color: var(--color-primary);
 }
 
 .cone-shape {
@@ -220,23 +242,61 @@ img {
   height: 0;
   width: 40px;
   left: 10vw;
-  border-top: 30px solid #00ff00;
+  border-top: 30px solid var(--color-primary);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
 
+@media (min-width: 1200px) {
+  .cone-shape {
+    left: 15vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .cone-shape {
+    left: 20vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .cone-shape {
+    left: 25vw;
+  }
+}
+@media (min-width: 1600px) {
+  .cone-shape {
+    left: 28vw;
+  }
+}
+
+@media (min-width: 1900px) {
+  .cone-shape {
+    left: 28vw;
+  }
+}
+@media (min-width: 2200px) {
+  .cone-shape {
+    left: 35vw;
+  }
+}
 .dripp {
   position: relative;
   height: 7px;
   width: 7px;
   left: -35vw;
-  background-color: #00ff00;
+  background-color: var(--color-primary);
   animation: dripp-dropp 0.7s infinite ease-in-out;
 }
 
 @media (min-width: 450px) {
   .dripp {
     left: -36vw;
+  }
+}
+@media (min-width: 450px) {
+  .dripp {
+    left: -36.5vw;
   }
 }
 @media (min-width: 700px) {
@@ -251,13 +311,31 @@ img {
 }
 @media (min-width: 1200px) {
   .dripp {
-    left: -38.5vw;
+    left: -33.5vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .dripp {
+    left: -28.5vw;
   }
 }
 
 @media (min-width: 1600px) {
   .dripp {
-    left: -39vw;
+    left: -20.7vw;
+  }
+}
+
+@media (min-width: 1900px) {
+  .dripp {
+    left: -21vw;
+  }
+}
+
+@media (min-width: 2200px) {
+  .dripp {
+    left: -14vw;
   }
 }
 
@@ -285,7 +363,7 @@ img {
   margin: auto;
   border-radius: 50%;
   border: solid 1px rgba(0, 0, 0, 0.887);
-  background-color: rgba(248, 6, 204, 0.705);
+  background-color: var(--color-accent-1);
   animation: circle 25s infinite linear;
 }
 
@@ -301,11 +379,10 @@ img {
 }
 
 .link-text {
-  font-family: "Press Start 2P", cursive;
   font-size: 0.5rem;
   padding: 2rem;
   text-decoration: none;
-  color: #00ff00;
+  color: var(--color-primary);
 }
 
 @media (min-width: 768px) {
@@ -352,7 +429,7 @@ img {
 .escape {
   margin-bottom: 2rem;
   font-family: "Reenie Beanie", cursive;
-  color: #ff00ff;
+  color: var(--color-accent-1);
   font-size: 2rem;
   margin: 5%;
   text-align: center;
@@ -366,8 +443,6 @@ img {
     font-size: 3rem;
   }
 }
-
-/*footer*/
 
 /* Footer */
 
@@ -408,18 +483,25 @@ img {
   color: var(--color-accent-1);
   white-space: nowrap;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .footer-headtext {
+    font-size: 1.5rem;
     grid-row: 1;
     grid-column: 1 / span 2;
   }
 }
 
 .footer-text {
-  font-size: 0.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   justify-self: start;
-  color: var(--color-accent-1);
+  font-family: Helvetica, sans-serif;
+  color: black;
+}
+@media (min-width: 900px) {
+  .footer-text {
+    font-size: 1.5rem;
+  }
 }
 
 .footer-links {
@@ -436,47 +518,21 @@ img {
   width: 30px;
   height: 30px;
 }
-/*
-.container-footer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.container-footer p {
-  width: 100%;
-  border: solid 4px #00ff00;
-  padding: 20px;
-  text-align: center;
-  font-size: 1rem;
-  font-family: Helvetica, sans-serif;
-  color: #00ff00;
-}
-
-@media (min-width: 1024px) {
-  .container-footer p {
-    font-size: 1.2rem;
-  }
-}*/
 
 /* Animation */
 
 @keyframes blink-squre {
   0% {
-    background-color: #ff00ff;
+    background-color: var(--color-accent-1);
   }
   49% {
-    background-color: #ff00ff;
+    background-color: var(--color-accent-1);
   }
   50% {
-    background-color: #00ff00;
+    background-color: var(--color-primary);
   }
   100% {
-    background-color: #00ff00;
+    background-color: var(--color-primary);
   }
 }
 
@@ -520,13 +576,13 @@ img {
   }
   to {
     top: 465px;
-    background-color: #00ff00;
+    background-color: var(--color-primary);
   }
 }
 
 @keyframes escape {
   0% {
-    color: #ff00ff;
+    color: var(--color-accent-1);
   }
   100% {
     color: rgba(35, 33, 33, 0.928);

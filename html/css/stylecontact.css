@@ -111,7 +111,7 @@ img {
   display: grid;
   grid-template-rows: 0.5fr 1fr;
 }
-@media (min-width: 850px) {
+@media (min-width: 666px) {
   .grid {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
@@ -167,6 +167,8 @@ img {
 .container-links-page {
   margin-top: 10vw;
   margin-bottom: 3vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
 }
 
 .links-page {
@@ -243,7 +245,7 @@ img {
   color: var(--color-accent-1);
   white-space: nowrap;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .footer-headtext {
     font-size: 1.5rem;
     grid-row: 1;
