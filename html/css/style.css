@@ -359,7 +359,7 @@ img {
   border-radius: 50%;
   border: solid 1px rgba(0, 0, 0, 0.887);
   background-color: var(--color-accent-1);
-  animation: circle 25s infinite linear;
+  animation: circle 25s infinite linear, tv-flicker 0.8s infinite;
 }
 
 @media (min-width: 750px) {
@@ -562,6 +562,32 @@ img {
     100% {
       transform: rotate(360deg) translateY(300px) rotate(-360deg);
     }
+  }
+}
+
+@keyframes tv-flicker {
+  0% {
+    box-shadow: 0 0 20px 5px #ffffff;
+  }
+
+  20% {
+    box-shadow: 0 0 30px 5px #b34fec;
+  }
+
+  40% {
+    box-shadow: 0 0 20px 5px #4fec4f;
+  }
+
+  60% {
+    box-shadow: 0 0 30px 5px #ec4f5c;
+  }
+
+  80% {
+    box-shadow: 0 0 20px 5px #dbd4e0;
+  }
+
+  100% {
+    box-shadow: 0 0 30px 5px #e9ec4f;
   }
 }
 
