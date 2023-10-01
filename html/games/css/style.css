@@ -51,7 +51,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 70%;
-  border-bottom: 5px solid rgb(248, 6, 203);
+  border-bottom: 5px solid var(--color-accent-1);
 }
 
 .text-header {
@@ -82,9 +82,11 @@ img {
   position: relative;
   top: 2vw;
   left: 15vw;
-  background-color: #ff00ff;
+  background-color: var(--color-accent-1);
   width: 20vw;
   height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
   z-index: -5;
   animation: blink-squre 0.4s infinite;
 }
@@ -93,9 +95,11 @@ img {
   position: relative;
   top: 2vw;
   right: 15vw;
-  background-color: #ff00ff;
+  background-color: var(--color-accent-1);
   width: 20vw;
   height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
   z-index: -5;
   animation: blink-squre 0.4s infinite;
 }
@@ -108,7 +112,7 @@ img {
 .capitalLetter {
   font-family: "Press Start 2P", cursive;
   font-size: 150%;
-  color: #ff00ff;
+  color: var(--color-accent-1);
 }
 .title-text {
   position: relative;
@@ -116,13 +120,34 @@ img {
   margin-left: 10px;
   margin-right: 10px;
   font-family: "Press Start 2P", cursive;
-  color: #00ff00;
+  color: var(--color-primary);
   font-size: 0.5rem;
+}
+@media (min-width: 600px) {
+  .title-text {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 700px) {
+  .title-text {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 768px) {
   .title-text {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .title-text {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .title-text {
+    font-size: 1.5rem;
   }
 }
 
@@ -153,28 +178,21 @@ img {
   animation-iteration-count: infinite;
 }
 
-/* Main */
-
-.grids {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  gap: 10px;
-  justify-items: center;
-}
-
 /*LINKS*/
 .container-links-games {
-  margin-top: 45px;
-  justify-self: center;
-  width: 300px;
-  height: 40px;
-  border-bottom: 3px solid #ff00ff;
-  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-@media (min-width: 768px) {
-  .container-links-games {
-    width: 600px;
-  }
+.box-links-games {
+  margin-top: 45px;
+  margin-bottom: 10px;
+  width: 62vw;
+  max-width: 744px;
+  height: 40px;
+  border-bottom: 3px var(--color-accent-1);
+  overflow-x: scroll;
 }
 
 .links-games {
@@ -194,24 +212,49 @@ img {
   color: #00ff00;
   text-decoration: none;
   font-family: "Press Start 2P", cursive;
-  border-bottom: 3px solid rgb(248, 6, 203);
-  border-left: 3px solid rgb(248, 6, 203);
-  border-right: 3px solid rgb(248, 6, 203);
+  border-bottom: 3px solid var(--color-accent-1);
+  border-left: 3px solid var(--color-accent-1);
+  border-right: 3px solid var(--color-accent-1);
 }
 
 /*screen*/
+
+.grid {
+  display: grid;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  grid-template-rows: 3fr 1fr;
+  justify-items: center;
+}
+@media (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    justify-content: start;
+  }
+}
 
 .wrapper-amiga {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin: 10px;
+  width: 65vw;
+  max-width: 780px;
+  height: 48vw;
+  max-height: 576px;
 }
 
 .screen {
   position: absolute;
   justify-self: center;
-  width: 58vw;
-  height: 42vw;
+  width: 65vw;
+  max-width: 780px;
+  height: 48vw;
+  max-height: 576px;
   background-color: rgb(191, 186, 186);
   border: solid 2px black;
   border-radius: 2%;
@@ -220,9 +263,11 @@ img {
 .window {
   position: relative;
   top: 3vw;
-  left: 3.5vw;
-  width: 50vw;
-  height: 34vw;
+  left: 2.5vw;
+  width: 60vw;
+  max-width: 720px;
+  height: 38vw;
+  max-height: 456px;
   background-color: black;
   border-radius: 10%;
   animation-name: tv-flicker;
@@ -230,10 +275,16 @@ img {
   animation-iteration-count: infinite;
 }
 
+@media (min-width: 1200px) {
+  .window {
+    top: 28px;
+    left: 30px;
+  }
+}
 /*LINKS*/
 
 .container-links-page {
-  margin-top: 45vw;
+  margin-top: 2vw;
   margin-right: 2vw;
   margin-bottom: 2vw;
 }
@@ -250,6 +301,14 @@ img {
   .links-page {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 0.7rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .links-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 4rem;
   }
 }
 
@@ -345,18 +404,25 @@ img {
   color: var(--color-accent-1);
   white-space: nowrap;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .footer-headtext {
+    font-size: 1.5rem;
     grid-row: 1;
     grid-column: 1 / span 2;
   }
 }
 
 .footer-text {
-  font-size: 0.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   justify-self: start;
-  color: var(--color-accent-1);
+  font-family: Helvetica, sans-serif;
+  color: black;
+}
+@media (min-width: 900px) {
+  .footer-text {
+    font-size: 1.5rem;
+  }
 }
 
 .footer-links {

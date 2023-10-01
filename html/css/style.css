@@ -261,11 +261,6 @@ img {
 
 @media (min-width: 1600px) {
   .cone-shape {
-    left: 25vw;
-  }
-}
-@media (min-width: 1600px) {
-  .cone-shape {
     left: 28vw;
   }
 }

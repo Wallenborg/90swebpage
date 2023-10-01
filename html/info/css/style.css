@@ -85,6 +85,8 @@ img {
   background-color: #ff00ff;
   width: 20vw;
   height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
   z-index: -5;
   animation: blink-squre 0.4s infinite;
 }
@@ -97,6 +99,8 @@ img {
   background-color: #ff00ff;
   width: 20vw;
   height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
   z-index: -5;
   animation: blink-squre 0.4s infinite;
 }
@@ -110,6 +114,7 @@ img {
 .ship {
   display: block;
   width: 20vw;
+  max-width: 150px;
   position: relative;
   animation: ship 8s infinite ease-out;
 }
@@ -179,6 +184,8 @@ img {
 .gif-90 {
   width: 20vw;
   height: 20vw;
+  max-width: 100px;
+  max-height: 100px;
   display: block;
   margin: 0 auto;
 }
@@ -213,6 +220,8 @@ img {
 .displayed {
   width: 30vw;
   height: 30vw;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .info-text {
@@ -226,6 +235,18 @@ img {
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
+}
+@media (min-width: 600px) {
+  .info-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-text {
+    top: 180px;
+    font-size: 2rem;
+  }
 }
 
 /*LINKS*/
