@@ -10,7 +10,57 @@
       }
       .wrapper {
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
+      }
+      .loader {
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #ff00ff;
+        border-radius: 50%;
+        justify-self: center;
+        animation: spin 2s linear infinite, hide 10s forwards;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes hide {
+        0% {
+          opacity: 1;
+        }
+        99% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      .container-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        animation: pop-up 11s backwards;
+      }
+
+      @keyframes pop-up {
+        0% {
+          opacity: 0;
+        }
+        99% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
       .text {
         color: antiquewhite;
@@ -26,8 +76,11 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1 class="text">This site is now secure, you can return.</h1>
-      <a href="index.html">Return</a>
+      <div class="loader"></div>
+      <div class="container-text">
+        <h1 class="text">This site is now secure, you can return.</h1>
+        <a href="index.html">Return</a>
+      </div>
     </div>
   </body>
 </html>
