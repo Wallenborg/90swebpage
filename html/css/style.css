@@ -81,8 +81,8 @@ img {
 
 .header-square-left {
   position: relative;
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
   max-width: 200px;
   max-height: 200px;
   top: 2vw;
@@ -95,8 +95,8 @@ img {
 
 .header-square-right {
   position: relative;
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
   max-width: 200px;
   max-height: 200px;
   top: 2vw;
@@ -442,8 +442,8 @@ img {
 /* Footer */
 
 .container-footer {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   width: 90%;
   margin-top: 5px;
   margin-bottom: 20px;

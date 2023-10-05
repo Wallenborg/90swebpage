@@ -39,7 +39,7 @@
           </div>
           <div class="container">
             <section class="continer-form">
-              <form action="#">
+              <form action="#" method="post">
                 <label class="form-text" for="fname">Name:</label>
                 <input
                   class="form-answer"
@@ -47,15 +47,17 @@
                   id="fname"
                   name="firstname"
                   placeholder="Your name.."
+                  required
                 />
 
-                <label class="form-text" for="lname">E-mail:</label>
+                <label class="form-text" for="email">E-mail:</label>
                 <input
                   class="form-answer"
-                  type="text"
-                  id="lname"
-                  name="lastname"
+                  type="email"
+                  name="email"
                   placeholder="Your e-mail.."
+                  pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
+                  required
                 />
 
                 <label class="form-text" for="subject">Subject:</label>
@@ -63,7 +65,7 @@
                   class="form-answer"
                   id="subject"
                   name="subject"
-                  placeholder="This actually doesn't work.."
+                  placeholder="This actually doesn't work.. but my email is niklas.wallenborg@hyperisland.se"
                   style="height: 200px"
                 ></textarea>
 
@@ -97,8 +99,9 @@
         <div class="footer-content">
           <h3 class="footer-headtext">90s Themed Website</h3>
           <p class="footer-text">
-            Hyper Island - The Fundamentals - Assessment - Niklas Wallenborg
-            2023
+            Hyper Island - The Fundamentals
+            <span class="small-text"> &#40;only HTML and CSS&#41;</span>
+            - Assessment - Niklas Wallenborg 2023
           </p>
           <ul class="footer-links">
             <li>

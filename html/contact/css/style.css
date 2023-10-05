@@ -80,8 +80,8 @@ img {
 
 .header-square-left {
   position: relative;
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
   max-width: 200px;
   max-height: 200px;
   top: 2vw;
@@ -94,8 +94,8 @@ img {
 
 .header-square-right {
   position: relative;
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
   max-width: 200px;
   max-height: 200px;
   top: 2vw;
@@ -134,10 +134,17 @@ img {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   width: 90%;
-  max-width: 300px;
+  max-width: 350px;
   padding: 1rem;
   border-radius: 8px;
   animation: border 2s linear infinite;
+}
+
+input:focus {
+  outline: 3px solid var(--color-primary);
+}
+textarea:focus {
+  outline: 3px solid var(--color-primary);
 }
 .form-text {
   font-size: 0.8rem;
@@ -147,7 +154,7 @@ img {
 .form-answer {
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 250px;
+  width: 270px;
 }
 .container-form-send {
   display: flex;
@@ -255,6 +262,16 @@ img {
 
 .footer-text {
   font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  justify-self: start;
+  font-family: Helvetica, sans-serif;
+  color: black;
+}
+
+.small-text {
+  font-size: 0.7rem;
+  vertical-align: middle;
   margin-bottom: 1rem;
   justify-self: start;
   font-family: Helvetica, sans-serif;

@@ -45,6 +45,7 @@ img {
   left: 0;
   display: flex;
   flex-wrap: wrap;
+  pointer-events: none;
   z-index: 2000;
   animation: rotateAndDisappear 1s ease forwards;
   animation-delay: 1.2s;
@@ -393,7 +394,6 @@ ul {
   100% {
     transform: rotateY(180deg);
     opacity: 0;
-    z-index: -100;
     visibility: hidden;
   }
 }
