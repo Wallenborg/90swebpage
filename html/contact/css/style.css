@@ -216,8 +216,6 @@ textarea:focus {
 /* Footer */
 
 .container-footer {
-  display: flex;
-  justify-content: center;
   width: 90%;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -261,25 +259,30 @@ textarea:focus {
 }
 
 .footer-text {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 1rem;
   line-height: 1.5;
   justify-self: start;
   font-family: Helvetica, sans-serif;
   color: black;
 }
+@media (min-width: 580px) {
+  .footer-text {
+    font-size: 1.5rem;
+  }
+}
 
 .small-text {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   vertical-align: middle;
   margin-bottom: 1rem;
   justify-self: start;
   font-family: Helvetica, sans-serif;
   color: black;
 }
-@media (min-width: 900px) {
-  .footer-text {
-    font-size: 1.5rem;
+@media (min-width: 580px) {
+  .small-text {
+    font-size: 0.8rem;
   }
 }
 
