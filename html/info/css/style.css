@@ -123,9 +123,8 @@ img {
 
 .head-wrap {
   display: grid;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 100%;
+
   grid-template-rows: 3fr 1fr;
   justify-items: center;
 }
@@ -155,12 +154,12 @@ img {
   scrollbar-color: #ff00ff;
   border: groove #ff00ff 3px;
 }
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   .content {
     margin-left: 2px;
     margin-right: 2px;
   }
-}
+} */
 
 .shake {
   animation: shake 0.5s;
@@ -272,6 +271,7 @@ img {
 @media (min-width: 600px) {
   .links-page {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.7rem;
   }
 }
 @media (min-width: 800px) {
