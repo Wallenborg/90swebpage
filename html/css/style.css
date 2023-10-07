@@ -26,6 +26,8 @@ img {
   max-width: 100%;
 }
 
+/*Page*/
+
 :root {
   --color-primary: #00ff00;
   --color-accent-1: #ff00ff;
@@ -40,13 +42,13 @@ img {
 
 /*Header*/
 
-.container-header {
+.container_header {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.container-header-text {
+.container__header__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +57,7 @@ img {
   border-bottom: 5px solid var(--color-accent-1);
 }
 
-.text-header {
+.header__text {
   text-align: center;
   font-size: 1.1rem;
   font-family: "Press Start 2P", cursive;
@@ -63,23 +65,23 @@ img {
 }
 
 @media (min-width: 550px) {
-  .text-header {
+  .header__text {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 700px) {
-  .text-header {
+  .header__text {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 900px) {
-  .text-header {
+  .header__text {
     font-size: 2.5rem;
   }
 }
 
-.header-square-left {
+.header__square__left {
   position: relative;
   width: 25vw;
   height: 25vw;
@@ -93,7 +95,7 @@ img {
   animation: blink-squre 0.4s infinite;
 }
 
-.header-square-right {
+.header__square__right {
   position: relative;
   width: 25vw;
   height: 25vw;
@@ -109,13 +111,13 @@ img {
 
 /* green pixel rain */
 
-.container-animation-pix {
+.container__animation__pix {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.pix-box-1 {
+.pix__box_1 {
   display: block;
   position: relative;
   width: 5px;
@@ -123,7 +125,7 @@ img {
   background-color: var(--color-accent-1);
   animation: rain 3s infinite;
 }
-.pix-box-2 {
+.pix__box_2 {
   display: block;
   position: relative;
   width: 5px;
@@ -131,7 +133,7 @@ img {
   background-color: var(--color-accent-1);
   animation: rain 5s infinite;
 }
-.pix-box-3 {
+.pix__box_3 {
   display: block;
   position: relative;
   width: 5px;
@@ -140,7 +142,7 @@ img {
   animation: rain 2s infinite;
 }
 
-.pix-box-4 {
+.pix__box_4 {
   display: block;
   position: relative;
   width: 5px;
@@ -148,7 +150,7 @@ img {
   background-color: var(--color-accent-1);
   animation: rain 7s infinite;
 }
-.pix-box-5 {
+.pix__box_5 {
   display: block;
   width: 5px;
   height: 5px;
@@ -157,7 +159,7 @@ img {
   animation: rain 4s 2s infinite;
 }
 
-.pix-box-6 {
+.pix__box_6 {
   display: block;
   position: relative;
   width: 5px;
@@ -165,7 +167,7 @@ img {
   background-color: var(--color-accent-1);
   animation: rain 4s 1s infinite;
 }
-.pix-box-7 {
+.pix__box_7 {
   display: block;
   position: relative;
   width: 5px;
@@ -173,7 +175,7 @@ img {
   background-color: var(--color-accent-1);
   animation: rain 4s 5s infinite;
 }
-.pix-box-8 {
+.pix__box_8 {
   display: block;
   position: relative;
   width: 5px;
@@ -181,7 +183,7 @@ img {
   background-color: var(--color-accent-1);
   animation: rain 6s 8s infinite;
 }
-.pix-box-9 {
+.pix__box_9 {
   display: block;
   position: relative;
   width: 5px;
@@ -189,7 +191,7 @@ img {
   background-color: var(--color-accent-1);
   animation: rain 1s 12s infinite;
 }
-.pix-box-10 {
+.pix__box_10 {
   display: block;
   position: relative;
   width: 5px;
@@ -197,7 +199,7 @@ img {
   background-color: var(--color-accent-1);
   animation: rain 8s 5s infinite;
 }
-.pix-box-11 {
+.pix__box_11 {
   display: block;
   position: relative;
   width: 5px;
@@ -206,147 +208,20 @@ img {
   animation: rain 12s 6s infinite;
 }
 
-/* dripping line */
-
-.center-line {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.continer-line {
-  margin-top: 105px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-self: center;
-}
-
-@media (min-width: 768px) {
-  .continer-line {
-    margin-top: 70px;
-  }
-}
-
-.line {
-  position: absolute;
-  height: 10px;
-  max-width: 1000px;
-  width: 90%;
-  background-color: var(--color-primary);
-}
-
-.cone-shape {
-  position: absolute;
-  height: 0;
-  width: 40px;
-  left: 10vw;
-  border-top: 30px solid var(--color-primary);
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-}
-
-@media (min-width: 1200px) {
-  .cone-shape {
-    left: 15vw;
-  }
-}
-
-@media (min-width: 1400px) {
-  .cone-shape {
-    left: 20vw;
-  }
-}
-
-@media (min-width: 1600px) {
-  .cone-shape {
-    left: 28vw;
-  }
-}
-
-@media (min-width: 1900px) {
-  .cone-shape {
-    left: 28vw;
-  }
-}
-@media (min-width: 2200px) {
-  .cone-shape {
-    left: 35vw;
-  }
-}
-.dripp {
-  position: relative;
-  height: 7px;
-  width: 7px;
-  left: -35vw;
-  background-color: var(--color-primary);
-  animation: dripp-dropp 0.7s infinite ease-in-out;
-}
-
-@media (min-width: 450px) {
-  .dripp {
-    left: -36vw;
-  }
-}
-@media (min-width: 450px) {
-  .dripp {
-    left: -36.5vw;
-  }
-}
-@media (min-width: 700px) {
-  .dripp {
-    left: -37vw;
-  }
-}
-@media (min-width: 900px) {
-  .dripp {
-    left: -38vw;
-  }
-}
-@media (min-width: 1200px) {
-  .dripp {
-    left: -33.5vw;
-  }
-}
-
-@media (min-width: 1400px) {
-  .dripp {
-    left: -28.5vw;
-  }
-}
-
-@media (min-width: 1600px) {
-  .dripp {
-    left: -20.7vw;
-  }
-}
-
-@media (min-width: 1900px) {
-  .dripp {
-    left: -21vw;
-  }
-}
-
-@media (min-width: 2200px) {
-  .dripp {
-    left: -14vw;
-  }
-}
-
 /* logo text and link */
-.container-logo {
+
+.container_logo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 135px;
 }
 
-.logo-img {
+.container_logo__img {
   width: 300px;
 }
 
-.container-link {
+.container_enter {
   position: relative;
   display: flex;
   justify-content: center;
@@ -363,32 +238,150 @@ img {
 }
 
 @media (min-width: 750px) {
-  .container-link {
+  .container_enter {
     width: 90px;
     height: 90px;
   }
 }
 
-.blink {
-  animation: blink 1s infinite;
-}
-
-.link-text {
+.container_enter__link {
   font-size: 0.5rem;
   padding: 2rem;
   text-decoration: none;
   color: var(--color-primary);
+  animation: blink 1s infinite;
 }
 
 @media (min-width: 768px) {
-  .link-text {
+  .container_enter__link {
     font-size: 0.8rem;
+  }
+}
+
+/* dripping line */
+
+.continer_dripping {
+  margin-top: 105px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .continer_dripping {
+    margin-top: 70px;
+  }
+}
+
+.continer_dripping__line {
+  position: absolute;
+  height: 10px;
+  max-width: 1000px;
+  width: 90%;
+  background-color: var(--color-primary);
+}
+
+.continer_dripping__cone_shape {
+  position: absolute;
+  height: 0;
+  width: 40px;
+  left: 10vw;
+  border-top: 30px solid var(--color-primary);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+@media (min-width: 1200px) {
+  .continer_dripping__cone_shape {
+    left: 15vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .continer_dripping__cone_shape {
+    left: 20vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .continer_dripping__cone_shape {
+    left: 28vw;
+  }
+}
+
+@media (min-width: 1900px) {
+  .continer_dripping__cone_shape {
+    left: 28vw;
+  }
+}
+@media (min-width: 2200px) {
+  .continer_dripping__cone_shape {
+    left: 35vw;
+  }
+}
+.continer_dripping__dripp {
+  position: relative;
+  height: 7px;
+  width: 7px;
+  left: -35vw;
+  background-color: var(--color-primary);
+  animation: dripp-dropp 0.7s infinite ease-in-out;
+}
+
+@media (min-width: 450px) {
+  .continer_dripping__dripp {
+    left: -36vw;
+  }
+}
+@media (min-width: 450px) {
+  .continer_dripping__dripp {
+    left: -36.5vw;
+  }
+}
+@media (min-width: 700px) {
+  .continer_dripping__dripp {
+    left: -37vw;
+  }
+}
+@media (min-width: 900px) {
+  .continer_dripping__dripp {
+    left: -38vw;
+  }
+}
+@media (min-width: 1200px) {
+  .continer_dripping__dripp {
+    left: -33.5vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .continer_dripping__dripp {
+    left: -28.5vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .continer_dripping__dripp {
+    left: -20.7vw;
+  }
+}
+
+@media (min-width: 1900px) {
+  .continer_dripping__dripp {
+    left: -21vw;
+  }
+}
+
+@media (min-width: 2200px) {
+  .continer_dripping__dripp {
+    left: -14vw;
   }
 }
 
 /* escape link */
 
-.wrap-escape {
+.continer_escape {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,7 +389,7 @@ img {
   margin-top: 150px;
   height: 400px;
 }
-.linkEscape {
+.link_escape {
   font-family: Helvetica, sans-serif;
   font-size: 0.8rem;
   border: solid 1px rgb(163, 15, 15);
@@ -413,7 +406,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  .linkEscape {
+  .link_escape {
     width: 80px;
     height: 80px;
     padding-top: 25px;
@@ -441,9 +434,7 @@ img {
 
 /* Footer */
 
-.container-footer {
-  /* display: flex;
-  justify-content: center; */
+.container_footer {
   width: 90%;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -451,7 +442,7 @@ img {
   margin-right: 5%;
 }
 
-.footer-content {
+.footer__content {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 10px;
@@ -466,40 +457,55 @@ img {
 }
 
 @media (min-width: 700px) {
-  .footer-content {
+  .footer__content {
     grid-template-columns: 2.5fr 0.5fr;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2.5fr 0.5fr;
   }
 }
 
-.footer-headtext {
+.footer__content__headtext {
   font-size: 1rem;
   color: var(--color-accent-1);
   white-space: nowrap;
 }
 @media (min-width: 700px) {
-  .footer-headtext {
+  .footer__content__headtext {
     font-size: 1.5rem;
     grid-row: 1;
     grid-column: 1 / span 2;
   }
 }
 
-.footer-text {
-  font-size: 1rem;
+.footer__content__text {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  justify-self: start;
+  font-family: Helvetica, sans-serif;
+  color: black;
+}
+@media (min-width: 580px) {
+  .footer__content__text {
+    font-size: 1.5rem;
+  }
+}
+
+.footer__content__small_text {
+  font-size: 0.5rem;
+  vertical-align: middle;
   margin-bottom: 1rem;
   justify-self: start;
   font-family: Helvetica, sans-serif;
   color: black;
 }
-@media (min-width: 900px) {
-  .footer-text {
-    font-size: 1.5rem;
+@media (min-width: 580px) {
+  .footer__content__small_text {
+    font-size: 0.8rem;
   }
 }
 
-.footer-links {
+.footer__content__links {
   list-style: none;
   display: flex;
   justify-self: end;
@@ -509,7 +515,7 @@ img {
   padding-inline-start: 0px;
 }
 
-.footer-links-img {
+.footer__content__links_img {
   width: 30px;
   height: 30px;
 }
