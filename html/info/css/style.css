@@ -24,7 +24,7 @@ img {
   display: block;
   max-width: 100%;
 }
-/*page*/
+/*global*/
 
 :root {
   --color-primary: #00ff00;
@@ -40,13 +40,13 @@ img {
 
 /*Header*/
 
-.container_header {
+.container-header {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.container_header__text {
+.container-header-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +55,7 @@ img {
   border-bottom: 5px solid rgb(248, 6, 203);
 }
 
-.header__text {
+.container-header-text__title {
   text-align: center;
   font-size: 1.1rem;
   font-family: "Press Start 2P", cursive;
@@ -63,23 +63,23 @@ img {
 }
 
 @media (min-width: 550px) {
-  .header__text {
+  .container-header-text__title {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 700px) {
-  .header__text {
+  .container-header-text__title {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 900px) {
-  .header__text {
+  .container-header-text__title {
     font-size: 2.5rem;
   }
 }
 
-.header__square__left {
+.container-header__square-left {
   position: relative;
   top: 10vw;
   left: 30vw;
@@ -92,7 +92,7 @@ img {
   animation: blink-squre 0.4s infinite;
 }
 
-.header__square__right {
+.container-header__square-right {
   position: relative;
   top: 15vw;
   right: 30vw;
@@ -106,7 +106,7 @@ img {
   animation: blink-squre 0.4s infinite;
 }
 
-.container_ship {
+.container-ship {
   margin-top: 30px;
   display: flex;
   justify-content: end;
@@ -122,7 +122,7 @@ img {
 
 /* main */
 
-.container_main {
+.container-main {
   display: grid;
   width: 100%;
 
@@ -130,7 +130,7 @@ img {
   justify-items: center;
 }
 @media (min-width: 800px) {
-  .container_main {
+  .container-main {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 3fr 1fr;
@@ -139,7 +139,7 @@ img {
   }
 }
 
-.content_info {
+.content-info {
   display: block;
   width: 1fr;
   background-color: #3f3636;
@@ -156,13 +156,13 @@ img {
   border: groove #ff00ff 3px;
 }
 
-.content_info__shake {
+.content-info__shake {
   animation: shake 0.5s;
   animation-iteration-count: 5;
   animation-delay: 10s;
 }
 
-.content_info__title {
+.content-info__title {
   font-family: "Press Start 2P", cursive;
   color: #00ff00;
   font-size: 1rem;
@@ -170,12 +170,12 @@ img {
   line-height: 1.8;
 }
 @media (min-width: 600px) {
-  .content_info__title {
+  .content-info__title {
     font-size: 2rem;
   }
 }
 
-.gif-90 {
+.content-info__gif-90 {
   width: 20vw;
   height: 20vw;
   max-width: 100px;
@@ -184,29 +184,29 @@ img {
   margin: 0 auto;
 }
 
-.paragraph {
+.content-info__paragraph {
   columns: 250px 2;
   column-gap: 20px;
 }
 
-.text_indent {
+.content-info__text-indent {
   text-indent: 2rem;
   padding-bottom: 1rem;
   margin-top: 5px;
 }
 
-.body_text {
+.content-info__body-text {
   color: #ff00ff;
   font-family: Helvetica, sans-serif;
 }
 
-.capital_letter {
+.content-info__capital-letter {
   font-family: "Press Start 2P", cursive;
   font-size: 150%;
   color: #00ff00;
 }
 
-.container_pirate {
+.container-pirate {
   display: flex;
   height: auto;
   position: relative;
@@ -224,7 +224,7 @@ img {
   max-height: 300px;
 }
 
-.container_pirate__pop_up_text {
+.container-pirate__pop-up-text {
   position: absolute;
   font-family: "Press Start 2P", cursive;
   color: #00ff00;
@@ -237,13 +237,13 @@ img {
   animation-timing-function: ease-out;
 }
 @media (min-width: 600px) {
-  .container_pirate__pop_up_text {
+  .container-pirate__pop-up-text {
     font-size: 1.2rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .container_pirate__pop_up_text {
+  .container-pirate__pop-up-text {
     top: 180px;
     font-size: 2rem;
   }
@@ -251,12 +251,12 @@ img {
 
 /*LINKS*/
 
-.container__links {
+.container-links {
   margin-top: 2vw;
   margin-bottom: 2vw;
 }
 
-.grid__links {
+.container-links__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -265,13 +265,13 @@ img {
   list-style-type: none;
 }
 @media (min-width: 620px) {
-  .grid__links {
+  .container-links__grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 0.7rem;
   }
 }
 @media (min-width: 800px) {
-  .grid__links {
+  .container-links__grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 4rem;
@@ -279,7 +279,7 @@ img {
   }
 }
 
-.grid__links__style__links {
+.grid-links__style-links {
   display: flex;
   justify-content: center;
   font-size: 0.8rem;
@@ -294,14 +294,14 @@ img {
 }
 
 @media (min-width: 768px) {
-  .grid__links__style__links {
+  .grid-links__style-links {
     font-size: 1.2rem;
   }
 }
 
 /* bubble*/
 
-.container_bubble {
+.container-bubble {
   position: absolute;
 
   width: 100%;
@@ -377,7 +377,7 @@ img {
 
 /* Footer */
 
-.container_footer {
+.container-footer {
   width: 90%;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -385,7 +385,7 @@ img {
   margin-right: 5%;
 }
 
-.footer__content {
+.footer-content {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 10px;
@@ -400,27 +400,27 @@ img {
 }
 
 @media (min-width: 700px) {
-  .footer__content {
+  .footer-content {
     grid-template-columns: 2.5fr 0.5fr;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2.5fr 0.5fr;
   }
 }
 
-.footer__content__headtext {
+.footer-content__headtext {
   font-size: 1rem;
   color: var(--color-accent-1);
   white-space: nowrap;
 }
 @media (min-width: 700px) {
-  .footer__content__headtext {
+  .footer-content__headtext {
     font-size: 1.5rem;
     grid-row: 1;
     grid-column: 1 / span 2;
   }
 }
 
-.footer__content__text {
+.footer-content__text {
   font-size: 0.8rem;
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -429,12 +429,12 @@ img {
   color: black;
 }
 @media (min-width: 580px) {
-  .footer__content__text {
+  .footer-content__text {
     font-size: 1.5rem;
   }
 }
 
-.footer__content__small_text {
+.footer-content__small-text {
   font-size: 0.5rem;
   vertical-align: middle;
   margin-bottom: 1rem;
@@ -443,12 +443,12 @@ img {
   color: black;
 }
 @media (min-width: 580px) {
-  .footer__content__small_text {
+  .footer-content__small-text {
     font-size: 0.8rem;
   }
 }
 
-.footer__content__links {
+.footer-content__links {
   list-style: none;
   display: flex;
   justify-self: end;
@@ -458,7 +458,7 @@ img {
   padding-inline-start: 0px;
 }
 
-.footer__content__links_img {
+.footer-content__links-img {
   width: 30px;
   height: 30px;
 }
